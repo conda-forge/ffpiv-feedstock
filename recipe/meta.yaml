@@ -1,5 +1,5 @@
 {% set name = "ffpiv" %}
-{% set version = "0.1.2" %}
+{% set version = "0.1.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ffpiv-{{ version }}.tar.gz
-  sha256: 01067bdaa4feea76075b3bf588199035a5d2a6e1c6f4eb7d82092325e631a454
+  sha256: 551626db1b1ff3a40f3ecc2d25875d9bc70ec1d91a127925c7e48b2b4af2e832
 
 build:
   noarch: python
