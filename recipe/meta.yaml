@@ -23,13 +23,14 @@ requirements:
     - python >={{ python_min }}
     - matplotlib-base
     - numba
-    - numpy >=1.23,<2
+    - numpy>2
     - pillow
     - pip
     - pooch
     - psutil
+    - pyfftw
     - rocket-fft
-
+  
 test:
   imports:
     - ffpiv
