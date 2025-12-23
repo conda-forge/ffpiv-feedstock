@@ -1,5 +1,5 @@
 {% set name = "ffpiv" %}
-{% set version = "0.1.4" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ffpiv-{{ version }}.tar.gz
-  sha256: 1c535ed46f120e86143e6f4e2bc55a443889f5ae5a2adc0a9be86c169e6ea85d
+  sha256: 00d82ea068add79a38bbf3aef8fef2d4ebe03db6a5a5b46480223edace5bc239
 
 build:
   noarch: python
@@ -22,14 +22,15 @@ requirements:
   run:
     - python >={{ python_min }}
     - matplotlib-base
-    - numba
-    - numpy >=1.23,<2
+    - numba >0.56
+    - numpy <2
     - pillow
     - pip
     - pooch
     - psutil
+    - pyfftw
     - rocket-fft
-
+  
 test:
   imports:
     - ffpiv
