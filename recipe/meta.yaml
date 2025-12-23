@@ -22,8 +22,8 @@ requirements:
   run:
     - python >={{ python_min }}
     - matplotlib-base
-    - numba
-    - numpy>2
+    - numba >0.56
+    - numpy <2
     - pillow
     - pip
     - pooch
