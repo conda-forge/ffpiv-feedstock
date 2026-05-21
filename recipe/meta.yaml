@@ -1,5 +1,5 @@
 {% set name = "ffpiv" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ffpiv-{{ version }}.tar.gz
-  sha256: 00d82ea068add79a38bbf3aef8fef2d4ebe03db6a5a5b46480223edace5bc239
+  sha256: 7522748a7ad6b2829afe22cec7de1518a0d8b49eeb1213b9b9a71e7872b38da4
 
 build:
   noarch: python
@@ -30,7 +30,7 @@ requirements:
     - psutil
     - pyfftw
     - rocket-fft
-  
+
 test:
   imports:
     - ffpiv
